@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="dark-mode" lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    
+    <nav>
+        <div>
+            <a
+               class="link" href="index.html" 
+                target="_blank"
+            >
+                index.html
+            </a>
+            <a
+                class="link" href="SEO.html" 
+                target="_blank"
+            >
+                SEO.html
+            </a>
+        </div>
+        
+        <div> 
+            <input
+                id="barraProcura" 
+                placeholder="Barra de procura"
+                type="search">
+            <button class="btn" 
+                onclick='pesquisar()'
+            >
+                buscar
+            </button>
+        </div>
+        
+    </nav>
+    <h1 class="cabecalho fonte-cabecalho">Meu aprendizado</h1>
+    <p class="texto fonte"> 
+        Minha experiência com a aprendizagem do HTML tem sido incrível,
+         e eu devo isso em grande parte ao meu professor Breno. Desde o
+          início do curso aprender os conceitos deste linguagem de marcação, 
+          ele explicar cada tag e sua função de forma clara e animada. Com o 
+          suporte de Breno, eu aprendi a estruturar páginas web e a usar as 
+          tags H1, P e Div, estou aprendendo também sobre atributos, estilos, 
+          ação simples, como usar facilitadores e ate mesmo a funcionalidade da
+           barra de busca, e a entender que a semântica é essencial para que o 
+           conteúdo criado possa ser acessível. Além disso, as atividades práticas 
+           propostas por ele tornam o aprendizado do HTML muito mais dinâmico, pois 
+           pude ver rapidamente os resultados de tudo o que estava aprendendo. Sinto-me
+            mais confiante para prosseguir na descoberta do mundo do desenvolvimento web,
+             e sou grato ao professor Breno por ser um instrutor tão inovador. Estou ansioso
+              para aplicar tudo o que aprendi em futuros projetos!
+    </p>
+    <div class="imagem-container">
+            <img class="imagem-curvada imagem" src="imgs/editado.jpeg">
+            <img class="imagem-curvada imagem" src="imgs/651x357.jpeg">
+    </div>
+    <a href="SEO.html"target="_blank" class="artigo">
+        <div class="artigo-texto-container">
+            <h1 class="cabecalho">Pesquisador</h1>
+            <p class="texto" >
+                Neste site eu aprendi a como fazer uma barra de pesquisa, e aprimorei a minha habilidade em relação aos estilos.
+            </p> 
+        </div>
+        <div class="artigo-imagem-container">
+            <img src="imgs/651x357.jpeg">
+        </div>
+    </a>
+    <a href="tarefa.html"target="_blank" class="artigo">
+        <div class="artigo-texto-container">
+            <h1 class="cabecalho">E-mail</h1>
+            <p class="texto" >
+                Eu criei esse site bem basico, apenas para colocar seu nome e seu e-mail, nesse site eu utilizei label e input, e aprendi a utilizar eles melhor.
+            </p> 
+        </div>
+        <div class="artigo-imagem-container">
+            <img src="imgs/e-mail.jpeg">
+        </div>
+    </a>
+    <a href="interaçãoeventos.html"target="_blank" class="artigo">
+        <div class="artigo-texto-container">
+            <h1 class="cabecalho">Eventos</h1>
+            <p class="texto" >
+                Neste site eu fiz um botão que quando você aperta ele cria um novo elemento e muda de cor, nele eu utilizei muitos scripts, aprendi bastante sobre scripts com este site.
+            </p> 
+        </div>
+        <div class="artigo-imagem-container">
+            <img src="imgs/eventos.jpeg">
+        </div>
+    </a>
+    <a href="Google.html"target="_blank" class="artigo">
+        <div class="artigo-texto-container">
+            <h1 class="cabecalho">Google</h1>
+            <p class="texto" >
+                Neste site tem dois botoes, um que te levara para o Google na mesma aba, e o outro que te levara para o Google em uma aba nova.
+            </p> 
+        </div>
+        <div class="artigo-imagem-container">
+            <img src="imgs/Google.jpeg">
+        </div>
+    </a>
+    <a href="inputsnatela.html"target="_blank" class="artigo">
+        <div class="artigo-texto-container">
+            <h1 class="cabecalho">Inputs na tela</h1>
+            <p class="texto" >
+                Este site foi bem complexo, nele quando você passa com o mouse em cima das de uma palavra ela ficará vermelha, nele eu aprendi mais sobre label, input, href e hover.
+            </p> 
+        </div>
+        <div class="artigo-imagem-container">
+            <img src="imgs/inputs na tela.jpeg">
+        </div>
+    </a>
+    <a href="eventosafetandoestiloseadicionandoelementos.html"target="_blank" class="artigo">
+        <div class="artigo-texto-container">
+            <h1 class="cabecalho">Lista</h1>
+            <p class="texto" >
+                Uma lista que te ajudara muito, nela você poderá adicionar qualquer item, foi utilizado apenas label e input.
+            </p> 
+        </div>
+        <div class="artigo-imagem-container">
+            <img src="imgs/lista.jpeg">
+        </div>
+    </a>
+    <script>
+        function pesquisar() {
+            var barraPesquisa = document.getElementById("barraProcura");
+            var barraPesquisaValor = barraPesquisa.value;
+
+
+            window.open('https://www.google.com/search?q=' + barraPesquisaValor, '_blank')
+        }
+    </script>
+</body>
+</html>

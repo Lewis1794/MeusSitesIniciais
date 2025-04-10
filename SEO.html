@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ferramenta de busca usando google">
+    <title>SEO</title>
+</head>
+
+<body>
+    <nav style="background-color:cornsilk;
+        border-radius: 15px;
+        border: solid 5px;
+        border-color: #817314b5; 
+        text-align: center;"
+    >
+        <h1 style="color:darkgoldenrod;">Pesquisador</h1>
+        <div style="display: inline-flex;">
+            <input 
+                id="barraProcura" 
+                placeholder="Barra de procura" 
+                type="search"
+            >
+            <button onclick='pesquisar()'>
+                buscar
+            </button>
+        </div>
+    </nav>
+    <script>
+        function pesquisar() {
+            var barraPesquisa = document.getElementById("barraProcura");
+            var barraPesquisaValor = barraPesquisa.value;
+
+
+            window.open('https://www.google.com/search?q=' + barraPesquisaValor, '_blank')
+        }
+
+    </script>
+</body>
+
+
+</html>

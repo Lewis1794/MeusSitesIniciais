@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <button id="botao">Mudar cor do texto e adicionar novo elemento</button>
+    <p id="texto">Este texto irá mudar de cor!</p>
+    <div id="novoElemento"></div>
+
+    <script>
+        document
+        .getElementById('botao')
+        .addEventListener('click', function() {
+            var texto = document
+            .getElementById('texto');
+            if (texto.style.color === 'blue') {
+                texto.style.color = 'black';
+            } else {
+                texto.style.color = 'blue';
+            }
+
+            // Adicionar novo elemento
+            var novoElemento = document.createElement('div');
+            novoElemento.id = 'novo-elemento';
+            novoElemento.innerHTML = 'Este é um novo elemento!';
+            document.getElementById("novoElemento").innerHTML=novoElemento.getHTML();
+        });
+    </script> 
+</body>
+</html>
