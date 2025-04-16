@@ -31,46 +31,54 @@ a.artigo h1 {
 nav>div>input[type$="search"] {
     color: red !important;
 }
-.flex-header{
+
+.flex-header {
     display: flex;
     justify-content: center;
 }
-.links{
+
+.links {
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     border-radius: 0px;
-
+    flex-direction: column;
 }
-.lado-lado{
+
+.lado-lado {
     display: flex;
 }
-.container-texto-conteudo{
+
+.container-texto-conteudo {
     padding-right: 1rem;
     padding-left: 1rem;
 }
 
-.border{
+.border {
     border: 5px black solid;
 }
-.grid{
+
+.grid {
     display: grid;
     grid-template-columns: auto auto auto;
 }
-.cabecalho-grid{
+
+.cabecalho-grid {
     grid-column-start: 1;
     grid-column-end: 4;
 }
-.grid-nav{
+
+.grid-nav {
     display: grid;
     border-radius: 0;
 }
-.grid-texto{
+
+.grid-texto {
     display: grid;
     grid-column-start: 2;
     grid-column-end: 4;
 }
-.grid-footer{
+
+.grid-footer {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -91,6 +99,37 @@ nav>div>input[type$="search"] {
 .artigo-texto-container {
     width: 70%;
 }
+img {
+    width: 80%;
+    height: auto;
+}
+.carrossel.imagem-container{
+    width: 100%;
+    max-width: none;
+    display: flex;
+    flex-wrap: unset;
+    justify-content: space-around;
+}
+.carrossel.imagem-container img{
+    max-width: 49%;
+    height: auto;
+}
+
+@media (max-width: 400px) {
+    img {
+        width: 50%;
+    }
+    .carrossel.imagem-container{
+        max-width: min-content;
+        display: block;
+    }
+    .carrossel.imagem-container img{
+        max-width: 49%;
+        height: auto;
+        min-width: 20rem;
+    }
+}
+
 
 .artigo-imagem-container {
     width: 30%;
@@ -126,12 +165,21 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+.flex-row{
+    display: flex;
+}
+.flex-right{
+    display: flex;
+    justify-content: flex-end;
+    
+}
 
 #barraProcura {
     color: var(--primary);
     background-color: var(--secondary);
     border: solid 4px var(--terciary);
-    border-radius: 4px;
+    border-radius: 10px 0px 0px 10px;
+
 }
 
 #barraProcura:focus {
@@ -139,11 +187,10 @@ body {
 }
 
 .btn {
-    border-radius: 5px;
+    border-radius: 0px 10px 10px 0px;
     background-color: var(--terciary);
     color: var(--primary);
     cursor: pointer;
-
 }
 
 .btn:hover {
