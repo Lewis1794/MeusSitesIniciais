@@ -19,7 +19,6 @@
 }
 .tremor-link {
     display: inline-block;
-    transition: transform 0.1s;
 }
 
 .tremor-link:hover {
@@ -177,6 +176,7 @@ body {
 
 .cabecalho {
     color: var(--primary);
+    display: inline-block;
 }
 
 .imagem {
