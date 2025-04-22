@@ -17,6 +17,24 @@
     --terciary: darkgray;
 
 }
+.tremor-link {
+    display: inline-block;
+    transition: transform 0.1s;
+}
+
+.tremor-link:hover {
+    animation: tremor 0.2s;
+}
+
+@keyframes tremor {
+    0% { transform: translate(1px, 0); }
+    20% { transform: translate(-1px, 0); }
+    40% { transform: translate(1px, 0); }
+    60% { transform: translate(-1px, 0); }
+    80% { transform: translate(1px, 0); }
+    100% { transform: translate(0, 0); }
+}
+
 
 
 .fonte-cabecalho {
