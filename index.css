@@ -17,6 +17,13 @@
     --terciary: darkgray;
 
 }
+
+.coffee-mode{
+    --primary: gold;
+    --secondary: darkred;
+    --terciary: darkgreen;
+} 
+
 .tremor-link {
     display: inline-block;
 }
@@ -110,8 +117,40 @@ nav>div>input[type$="search"] {
     grid-column-end: 4;
 }
 
+.alinhamento-de-texto{
+    border: solid 5px;
+    border: 10px var(--terciary) solid;
+    text-align-last: center;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: transparent;
+    transition: background 0.3s;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
 
 
+
+
+a:hover::after {
+    background: goldenrod;
+}
+
+a:hover {
+    color: goldenrod;
+}
 
 
 .artigo {
@@ -140,6 +179,37 @@ img {
     max-width: 49%;
     height: auto;
 }
+@media (max-width: 300px) {
+    .artigo-texto-container {
+        width: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .artigo {
+        margin: 5px;
+        padding: 10px;
+        border: 10px var(--terciary) solid;
+        display: flex;
+        height: min-content;
+        flex-direction: column;
+    }
+    .cabecalho {
+        font-size: 30px;
+    }
+    .artigo-imagem-container{
+        width: 100%;
+    }
+    .nav-vertical{
+        display: flex !important;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        width: fit-content;
+    }
+    .nav-horizontal{
+        display: none;
+    }
+}
 
 @media (max-width: 400px) {
     img {
@@ -157,7 +227,7 @@ img {
 }
 
 
-.artigo-imagem-container {
+.artigo-imagem-container h1{
     width: 30%;
 }
 
@@ -183,6 +253,7 @@ body {
     border: solid 5px;
     border-color: var(--terciary);
 }
+
 
 .imagem-container {
     border-radius: 10px;
@@ -231,6 +302,9 @@ body {
 
 .imagem-reta {
     border-radius: 0px;
+}
+.nav-vertical{
+    display: none;
 }
 
 nav {
