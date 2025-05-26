@@ -19,9 +19,9 @@
 }
 
 .natal-mode{
-    --primary: gold;
-    --secondary: darkred;
-    --terciary: darkgreen;
+    --primary: green;
+    --secondary: silver;
+    --terciary: black;
 } 
 
 .tremor-link {
@@ -121,11 +121,31 @@ nav>div>input[type$="search"] {
     border: solid 5px;
     border: 10px var(--terciary) solid;
     text-align-last: center;
+    color: var(--primary);
+}
+
+
+
+.secao-1 {
+    background-color: #f9f9f9;
+}
+
+.secao-2 {
+    background-color: #e7e7e7;
+}
+
+
+
+
+.ajuste-footer{
+    border: solid 5px;
+    border: 10px var(--terciary) solid;
+    color: var(--primary);
 }
 
 a {
     text-decoration: none;
-    color: gold;
+    color: var(--primary);
     position: relative;
 }
 
@@ -145,11 +165,11 @@ a::after {
 
 
 a:hover::after {
-    background: goldenrod;
+    background: darkgreen;
 }
 
 a:hover {
-    color: goldenrod;
+    color: darkgreen;
 }
 
 
@@ -162,7 +182,7 @@ a:hover {
 }
 
 .artigo-texto-container {
-    width: 70%;
+    width: 70;
 }
 img {
     width: 80%;
@@ -242,6 +262,7 @@ body {
 
 .texto {
     color: var(--primary);
+    text-align: center;
 }
 
 .cabecalho {
