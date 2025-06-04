@@ -127,11 +127,11 @@ nav>div>input[type$="search"] {
 
 
 .secao-1 {
-    background-color: #f9f9f9;
+    background-color: black;
 }
 
 .secao-2 {
-    background-color: #e7e7e7;
+    background-color: black;
 }
 
 
@@ -141,6 +141,11 @@ nav>div>input[type$="search"] {
     border: solid 5px;
     border: 10px var(--terciary) solid;
     color: var(--primary);
+     max-width: 300px;
+     margin: 0 auto;
+     text-align: center;
+     padding: 10px;
+
 }
 
 a {
