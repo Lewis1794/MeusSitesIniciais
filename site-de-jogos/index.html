@@ -55,16 +55,34 @@
             width: 100%;
             height: auto;
         }
-
-        .linha-jogo {
+.linha-jogo {
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: black;
+             color: aliceblue;
+            
+            
+        }
+
+        .linha-jogo .linha-toda{
+            width: 100%;
+            min-width: 500px;
         }
 
         .linha-jogo .imagem {
             height: 100px;
+        }
+
+        @media screen and (max-width: 500px) {
+           .linha-jogo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+             color: aliceblue;
+             overflow: scroll;
+           }
         }
 
         .linha-jogo .conteudo {
@@ -72,19 +90,26 @@
             display: flex;
             align-items: center;
         }
-
         .linha-jogo .conteudo>span {
             margin: 5px;
-            color: aliceblue;
+           
         }
-
         .linha-jogo .titulo {
             font-weight: bold;
             font-size: 25px;
+
         }
 
-        .linha-jogo .conteudo .texto-verde {
+        .cabecalho-para-esquerda{
+            text-align: left;
+        }
+
+         .texto-verde {
             color: green;
+        } 
+        
+        .texto-centralizado{
+            text-align: center;
         }
     </style>
     <div class="secao">
@@ -118,54 +143,114 @@
             </div>
         </div>
     </div>
-    <div style="display: flex;
-    align-items: center; justify-content: space-between;">
+    <div>
 
-        <div>
-            <h1>Mais jogados</h1>
-        </div>
-
-        <div>
-            <span>
-                Valor
-            </span>
-            <span>
-                Categoria
-            </span>
-        </div>
-
+       <div class="linha-jogo">
+        <table class="linha-toda" style="">
+            <tr>
+                <th class="cabecalho-para-esquerda" colspan="2">
+                  Mais jogados  
+                </th>
+                <th>
+                    Valor
+                </th>
+                <th>
+                    Jogadores simultaneos
+                </th>
+            </tr>
+            <tr>
+                <td width="10%">
+                     <img class="imagem" src="imgs/f1 25.webp">
+                </td>
+                <td width="70%" class="titulo">
+                    Elden ring
+                </td>
+                <td width="10%" class="texto-verde texto-centralizado">
+                    R$200,00
+                </td>
+                <td class="texto-centralizado" width="10%">
+                     Lorem, ipsum.
+                </td>
+                
+            </tr>
+            <tr>
+                <td width="10%">
+                     <img class="imagem" src="imgs/f1 25.webp">
+                </td>
+                <td width="70%" class="titulo">
+                    Elden ring
+                </td>
+                <td width="10%" class="texto-verde texto-centralizado">
+                    R$200,00
+                </td>
+                <td class="texto-centralizado" width="10%">
+                     Lorem, ipsum.
+                </td>
+                
+            </tr>
+            <tr>
+                <td width="10%">
+                     <img class="imagem" src="imgs/f1 25.webp">
+                </td>
+                <td width="70%" class="titulo">
+                    Elden ring
+                </td>
+                <td width="10%" class="texto-verde texto-centralizado">
+                    R$200,00
+                </td>
+                <td class="texto-centralizado" width="10%">
+                     Lorem, ipsum.
+                </td>
+                
+            </tr>
+            <tr>
+                <td width="10%">
+                     <img class="imagem" src="imgs/f1 25.webp">
+                </td>
+                <td width="70%" class="titulo">
+                    Elden ring
+                </td>
+                <td width="10%" class="texto-verde texto-centralizado">
+                    R$200,00
+                </td>
+                <td class="texto-centralizado" width="10%">
+                     Lorem, ipsum.
+                </td>
+                
+            </tr>
+            <tr>
+                <td width="10%">
+                     <img class="imagem" src="imgs/f1 25.webp">
+                </td>
+                <td width="70%" class="titulo">
+                    Elden ring
+                </td>
+                <td width="10%" class="texto-verde texto-centralizado">
+                    R$200,00
+                </td>
+                <td class="texto-centralizado" width="10%">
+                     Lorem, ipsum.
+                </td>
+                
+            </tr>
+            <tr>
+                <td width="10%">
+                     <img class="imagem" src="imgs/f1 25.webp">
+                </td>
+                <td width="70%" class="titulo">
+                    Elden ring
+                </td>
+                <td width="10%" class="texto-verde texto-centralizado">
+                    R$200,00
+                </td>
+                <td class="texto-centralizado" width="10%">
+                     Lorem, ipsum.
+                </td>
+                
+            </tr>
+            
+        </table>
     </div>
-    <div class="linha-jogo">
-        <div class="conteudo">
-            <img class="imagem" src="imgs/f1 25.webp">
-            <span class="titulo">
-                Elden ring
-            </span>
-        </div>
-        <div class="conteudo">
-            <span class="texto-verde">
-                R$200,00
-            </span>
-            <span>
-                Lorem, ipsum.
-            </span>
-        </div>
-    </div>
-    <div class="linha-jogo">
-        <div class="conteudo">
-            <img class="imagem" src="imgs/f1 25.webp">
-            <span class="titulo">
-                Elden ring
-            </span>
-        </div>
-        <div class="conteudo">
-            <span class="texto-verde">
-                R$200,00
-            </span>
-            <span>
-                Lorem, ipsum.
-            </span>
-        </div>
     </div>
 </body>
 
