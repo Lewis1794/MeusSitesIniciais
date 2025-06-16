@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linha-jogo</title>
+</head>
+
+<body>
+    <style>
+        .linha-jogo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+        }
+
+        .linha-jogo .imagem {
+            height: 100px;
+        }
+
+        .linha-jogo .conteudo {
+            /* align-items: center; display: flex; background-color: black; ;*/
+            display: flex;
+            align-items: center;
+        }
+        .linha-jogo .conteudo>span {
+            margin: 5px;
+            color: aliceblue;
+        }
+        .linha-jogo .titulo {
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .linha-jogo .conteudo .texto-verde {
+            color: green;
+        }        
+    </style>
+    <div class="linha-jogo">
+        <div class="conteudo">
+            <img class="imagem" src="../imgs/f1 25.webp">
+            <span class="titulo">
+                Elden ring
+            </span>
+        </div>
+        <div class="conteudo">
+            <span class="texto-verde">
+                R$200,00
+            </span>
+            <span>
+                Lorem, ipsum.
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
