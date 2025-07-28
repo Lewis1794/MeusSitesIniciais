@@ -14,7 +14,13 @@
             padding: 5px;
         }
 
+        .no-padding {
+            padding: 0;
+        }
 
+        .no-margin {
+            margin: 0;
+        }
 
         .alinhamento-de-imagem {
             display: flex;
@@ -33,6 +39,7 @@
             background-color: blue;
             border: solid 5px;
             padding: 3px;
+            border-radius: 10px;
         }
 
         .card-jogo {
@@ -47,6 +54,14 @@
             padding: 10px;
         }
 
+
+
+        .card-jogo .texto>.texto-sem-padding {
+            padding: 0;
+            padding-bottom: 2px;
+            padding-top: 2px;
+        }
+
         .card-jogo.cor-do-fundo {
             background-color: blue;
         }
@@ -55,17 +70,30 @@
             width: 100%;
             height: auto;
         }
-.linha-jogo {
+
+        .card-jogo .texto-promocao {
+            background-color: green;
+            max-width: fit-content;
+            padding: 5px;
+            font-weight: bolder;
+        }
+
+
+        .linha-jogo {
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: black;
-             color: aliceblue;
-            
-            
+            color: aliceblue;
+
+
         }
 
-        .linha-jogo .linha-toda{
+        .sombreado {
+            box-shadow: 5px 5px 10px rgba(2, 0, 0, 0.5);
+        }
+
+        .linha-jogo .linha-toda {
             width: 100%;
             min-width: 500px;
         }
@@ -75,14 +103,14 @@
         }
 
         @media screen and (max-width: 500px) {
-           .linha-jogo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: black;
-             color: aliceblue;
-             overflow: scroll;
-           }
+            .linha-jogo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: black;
+                color: aliceblue;
+                overflow: scroll;
+            }
         }
 
         .linha-jogo .conteudo {
@@ -90,25 +118,27 @@
             display: flex;
             align-items: center;
         }
+
         .linha-jogo .conteudo>span {
             margin: 5px;
-           
+
         }
+
         .linha-jogo .titulo {
             font-weight: bold;
             font-size: 25px;
 
         }
 
-        .cabecalho-para-esquerda{
+        .cabecalho-para-esquerda {
             text-align: left;
         }
 
-         .texto-verde {
+        .texto-verde {
             color: green;
-        } 
-        
-        .texto-centralizado{
+        }
+
+        .texto-centralizado {
             text-align: center;
         }
     </style>
@@ -143,115 +173,172 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="secao">
 
-       <div class="linha-jogo">
-        <table class="linha-toda">
-            <tr>
-                <th class="cabecalho-para-esquerda" colspan="2">
-                  Mais jogados  
-                </th>
-                <th>
-                    Valor
-                </th>
-                <th>
-                    Jogadores simultaneos
-                </th>
-            </tr>
-            <tr>
-                <td width="10%">
-                     <img class="imagem" src="imgs/f1 25.webp">
-                </td>
-                <td width="70%" class="titulo">
-                    Elden ring
-                </td>
-                <td width="10%" class="texto-verde texto-centralizado">
-                    R$200,00
-                </td>
-                <td class="texto-centralizado" width="10%">
-                     Lorem, ipsum.
-                </td>
-                
-            </tr>
-            <tr>
-                <td width="10%">
-                     <img class="imagem" src="imgs/f1 25.webp">
-                </td>
-                <td width="70%" class="titulo">
-                    Elden ring
-                </td>
-                <td width="10%" class="texto-verde texto-centralizado">
-                    R$200,00
-                </td>
-                <td class="texto-centralizado" width="10%">
-                     Lorem, ipsum.
-                </td>
-                
-            </tr>
-            <tr>
-                <td width="10%">
-                     <img class="imagem" src="imgs/f1 25.webp">
-                </td>
-                <td width="70%" class="titulo">
-                    Elden ring
-                </td>
-                <td width="10%" class="texto-verde texto-centralizado">
-                    R$200,00
-                </td>
-                <td class="texto-centralizado" width="10%">
-                     Lorem, ipsum.
-                </td>
-                
-            </tr>
-            <tr>
-                <td width="10%">
-                     <img class="imagem" src="imgs/f1 25.webp">
-                </td>
-                <td width="70%" class="titulo">
-                    Elden ring
-                </td>
-                <td width="10%" class="texto-verde texto-centralizado">
-                    R$200,00
-                </td>
-                <td class="texto-centralizado" width="10%">
-                     Lorem, ipsum.
-                </td>
-                
-            </tr>
-            <tr>
-                <td width="10%">
-                     <img class="imagem" src="imgs/f1 25.webp">
-                </td>
-                <td width="70%" class="titulo">
-                    Elden ring
-                </td>
-                <td width="10%" class="texto-verde texto-centralizado">
-                    R$200,00
-                </td>
-                <td class="texto-centralizado" width="10%">
-                     Lorem, ipsum.
-                </td>
-                
-            </tr>
-            <tr>
-                <td width="10%">
-                     <img class="imagem" src="imgs/f1 25.webp">
-                </td>
-                <td width="70%" class="titulo">
-                    Elden ring
-                </td>
-                <td width="10%" class="texto-verde texto-centralizado">
-                    R$200,00
-                </td>
-                <td class="texto-centralizado" width="10%">
-                     Lorem, ipsum.
-                </td>
-                
-            </tr>
+        <div class="linha-jogo">
+            <table class="linha-toda">
+                <tr>
+                    <th class="cabecalho-para-esquerda" colspan="2">
+                        Mais jogados
+                    </th>
+                    <th>
+                        Valor
+                    </th>
+                    <th>
+                        Jogadores simultaneos
+                    </th>
+                </tr>
+                <tr>
+                    <td width="10%">
+                        <img class="imagem" src="imgs/f1 25.webp">
+                    </td>
+                    <td width="70%" class="titulo">
+                        Elden ring
+                    </td>
+                    <td width="10%" class="texto-verde texto-centralizado">
+                        R$200,00
+                    </td>
+                    <td class="texto-centralizado" width="10%">
+                        Lorem, ipsum.
+                    </td>
 
-        </table>
+                </tr>
+                <tr>
+                    <td width="10%">
+                        <img class="imagem" src="imgs/f1 25.webp">
+                    </td>
+                    <td width="70%" class="titulo">
+                        Elden ring
+                    </td>
+                    <td width="10%" class="texto-verde texto-centralizado">
+                        R$200,00
+                    </td>
+                    <td class="texto-centralizado" width="10%">
+                        Lorem, ipsum.
+                    </td>
+
+                </tr>
+                <tr>
+                    <td width="10%">
+                        <img class="imagem" src="imgs/f1 25.webp">
+                    </td>
+                    <td width="70%" class="titulo">
+                        Elden ring
+                    </td>
+                    <td width="10%" class="texto-verde texto-centralizado">
+                        R$200,00
+                    </td>
+                    <td class="texto-centralizado" width="10%">
+                        Lorem, ipsum.
+                    </td>
+
+                </tr>
+                <tr>
+                    <td width="10%">
+                        <img class="imagem" src="imgs/f1 25.webp">
+                    </td>
+                    <td width="70%" class="titulo">
+                        Elden ring
+                    </td>
+                    <td width="10%" class="texto-verde texto-centralizado">
+                        R$200,00
+                    </td>
+                    <td class="texto-centralizado" width="10%">
+                        Lorem, ipsum.
+                    </td>
+
+                </tr>
+                <tr>
+                    <td width="10%">
+                        <img class="imagem" src="imgs/f1 25.webp">
+                    </td>
+                    <td width="70%" class="titulo">
+                        Elden ring
+                    </td>
+                    <td width="10%" class="texto-verde texto-centralizado">
+                        R$200,00
+                    </td>
+                    <td class="texto-centralizado" width="10%">
+                        Lorem, ipsum.
+                    </td>
+
+                </tr>
+                <tr>
+                    <td width="10%">
+                        <img class="imagem" src="imgs/f1 25.webp">
+                    </td>
+                    <td width="70%" class="titulo">
+                        Elden ring
+                    </td>
+                    <td width="10%" class="texto-verde texto-centralizado">
+                        R$200,00
+                    </td>
+                    <td class="texto-centralizado" width="10%">
+                        Lorem, ipsum.
+                    </td>
+
+                </tr>
+
+            </table>
+        </div>
     </div>
-    </div>
+    <div class="secao sombreado">
+        <div style="display: flex;">
+            <div class="card-jogo cor-do-fundo">
+                <img src="imgs/f1 25.webp">
+                <div class="texto">
+                    <h3 style="font-size: xx-large;">
+                        GTA VI
+                    </h3>
+                    <div class="texto-promocao">
+                        <span>-30%</span>
+                        <span>
+                            R$30,50
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-jogo cor-do-fundo">
+                <img src="imgs/f1 25.webp">
+                <div class="texto">
+                    <h3 style="font-size: xx-large;">
+                        Lorem, ipsum.
+                    </h3>
+                    <p>
+                        R$30,50
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="card-jogo cor-do-fundo">
+                    <img src="imgs/f1 25.webp">
+                    <div class="texto">
+                        <h3 class="no-padding no-margin">
+                            Lorem, ipsum.
+                        </h3>
+                        <p class="no-padding no-margin">
+                            R$30,50
+                        </p>
+                    </div>
+                </div>
+                <div class="card-jogo cor-do-fundo">
+                    <img src="imgs/f1 25.webp">
+                    <div class="texto">
+                        <h3 class="no-padding no-margin">
+                            Lorem, ipsum.
+                        </h3>
+                        <div class="texto-promocao">
+                            <span>-30%</span>
+                            <span>
+                                R$30,50
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+        </div>
+
 </body>
 
 </html>
