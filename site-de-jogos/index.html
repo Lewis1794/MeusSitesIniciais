@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,33 @@
 
 <body>
     <style>
+        .borda-esquerda {
+            border: solid 3px #000000;
+            border-right: #000000;
+            border-top: #000000;
+            border-bottom: #000000;
+        }
+
+        
+
+        .cor-titulo{
+            color: aliceblue;
+            padding: 5px;
+        }
+
         .borda {
             border: solid 5px;
             padding: 5px;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-column {
+            display: flex;
+            flex-direction: column;
         }
 
         .no-padding {
@@ -140,6 +164,25 @@
 
         .texto-centralizado {
             text-align: center;
+        }
+
+        .coluna-jogo {
+            display: flex;
+            margin: 2px;
+        }
+
+
+        .coluna-jogo .container-img {
+            width: 20%;
+        }
+
+        .coluna-jogo .container-texto {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
         }
     </style>
     <div class="secao">
@@ -283,7 +326,7 @@
         </div>
     </div>
     <div class="secao sombreado">
-        <div style="display: flex;">
+        <div class="flex-row">
             <div class="card-jogo cor-do-fundo">
                 <img src="imgs/f1 25.webp">
                 <div class="texto">
@@ -336,8 +379,100 @@
                     </div>
                 </div>
             </div>
-                    
         </div>
+    </div>
+    <div class="secao">
+        <div class="flex-row">
+            <div class="flex-column">
+                <h1 class="cor-titulo">Lorem.</h1>
+                <div class="coluna-jogo">
+                    <div class="container-img">
+                        <img width="100%" src="imgs/f1 25.webp" alt="">
+                    </div>
+                    <div class="container-texto">
+                        <span>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                        <span>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                    </div>
+                </div>
+                <div class="coluna-jogo">
+                    <div class="container-img">
+                        <img width="100%" src="imgs/f1 25.webp" alt="">
+                    </div>
+                    <div class="container-texto">
+                        <span>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                        <span>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-column borda-esquerda">
+                <h1 class="cor-titulo">Lorem.</h1>
+                <div class="coluna-jogo">
+                    <div class="container-img">
+                        <img width="100%" src="imgs/f1 25.webp" alt="">
+                    </div>
+                    <div class="container-texto">
+                        <span>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                        <span>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                    </div>
+                </div>
+                <div class="coluna-jogo ">
+                    <div class="container-img">
+                        <img width="100%" src="imgs/f1 25.webp" alt="">
+                    </div>
+                    <div class="container-texto">
+                        <span>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                        <span>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-column borda-esquerda">
+                <h1 class="cor-titulo">Lorem.</h1>
+                <div class="coluna-jogo">
+                    <div class="container-img">
+                        <img width="100%" src="imgs/f1 25.webp" alt="">
+                    </div>
+                    <div class="container-texto">
+                        <span>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                        <span>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                    </div>
+                </div>
+                <div class="coluna-jogo">
+                    <div class="container-img">
+                        <img width="100%" src="imgs/f1 25.webp" alt="">
+                    </div>
+                    <div class="container-texto">
+                        <span>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                        <span>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 
